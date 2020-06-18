@@ -57,8 +57,33 @@
       </v-btn>
     </v-bottom-navigation>
 
-        <v-icon color="red" filled>fas fa-lock</v-icon>
+ <v-combobox
+          v-model="select"
+          color=""
+          label="Select a favorite activity or create a new one"
+          multiple
+        ></v-combobox>
 
+         <v-menu offset-y>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          color="primary"
+          dark
+          v-bind="attrs"
+          v-on="on"
+        >
+          Dropdown
+        </v-btn>
+      </template>
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in items"
+          :key="index"
+        >
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-menu>
   </v-container>
 </template>
 
