@@ -3,11 +3,30 @@
     <v-alert type="success" border="top" elevation="3" color="red lighten-2">I'm a success alert</v-alert>
     <v-app-bar color="deep-purple accent-4" dense dark>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
       <v-toolbar-title>Page title</v-toolbar-title>
-
       <v-spacer></v-spacer>
-
+<v-card
+    class=""
+elevation=""
+    max-width=""
+  >
+    <v-card-text>
+      <p class="">
+       
+      </p>
+      <div class="text--primary">
+       
+      </div>
+    </v-card-text>
+    <v-card-actions>
+      <v-btn
+        text
+        color=""
+      >
+       
+      </v-btn>
+    </v-card-actions>
+  </v-card>
       <v-btn icon>
         <v-icon>mdi-heart</v-icon>
       </v-btn>
@@ -28,7 +47,7 @@
       outlined
       color
     ></v-text-field>
-
+vapp
     <v-select color v-model="item" :items="items" filled label="Filled style"></v-select>
     <v-textarea
       outlined

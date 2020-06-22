@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-alert type="success">I'm a success alert.</v-alert>
+    <app
   </div>
 </template>
 
